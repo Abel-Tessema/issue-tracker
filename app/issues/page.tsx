@@ -1,9 +1,11 @@
 import React from 'react';
-import {usePathname} from "next/navigation";
+import {Button} from "@radix-ui/themes";
 
 function IssuesPage() {
   return (
-    <div>Issues</div>
+    <div>
+      <Button>New Issue</Button>
+    </div>
   );
 }
 

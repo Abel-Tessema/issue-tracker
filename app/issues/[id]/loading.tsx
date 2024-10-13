@@ -12,7 +12,7 @@ function LoadingIssueDetailsPage() {
         <Skeleton width='8rem' className={`${lineHeight}`}/>
       </Flex>
       <Card className='space-y-5'>
-        {lines.map(() => <Skeleton className={`${lineHeight}`}/>)}
+        {lines.map((line) => <Skeleton key={line} className={`${lineHeight}`}/>)}
       </Card>
     </Box>
   );

@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/app/NavBar";
 import "@radix-ui/themes/styles.css";
-import {Theme, ThemePanel} from "@radix-ui/themes";
+import {Theme} from "@radix-ui/themes";
 import {ReactNode} from "react";
 
 const geistSans = localFont({
@@ -33,7 +33,6 @@ export default function RootLayout({
         <Theme accentColor="violet">
           <NavBar/>
           <main className='p-5'>{children}</main>
-          {/*<ThemePanel/>*/}
         </Theme>
       </body>
     </html>
